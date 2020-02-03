@@ -1,0 +1,265 @@
+body {
+  font-family: 'Lilita One', cursive;
+  margin:0;
+  padding: 0;
+  height: auto;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Header */
+
+#header{
+	display: flex;
+	background-color: rgb(212, 36, 38);
+	margin:0;
+	padding: 0;
+}
+
+.nombre{
+	margin-top: 30px;
+	margin-right: 400px;
+}
+
+#nombre{
+	margin-left: 30px;
+	font-family: 'Lilita One', cursive;
+	margin-top: 100px;
+	font-size: 30px;
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.elementoMenu{
+	margin-left: 50px;
+	margin-top: 30px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	transition-duration: 0.3s;
+}
+
+.elementoMenu:hover{
+	color: rgb(43, 112, 40);
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition-duration: 0.3s;
+
+}
+
+
+#nombre:hover{
+	
+	letter-spacing: 3px;
+	transition-duration: 0.5s;
+}
+
+/* index  */
+
+.medio{
+	overflow: auto;
+
+	padding: 0;
+	background-image: url('https://bit.ly/2PcrMu4');
+	height: 510px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+#titulo{
+	margin-left: 200px;
+	margin-top: 150px;
+	font-size: 50px;
+	color: white;
+}
+
+#subtitulo{
+	margin-left: 180px;
+	color: white;
+}
+
+#musica{
+	font-family: 'Lilita One', cursive;
+	border-radius: 5px;
+	margin-top: 160px;
+	background-color: rgba(60,141,13,0.7);
+	opacity: 0.4;
+	transition-duration: 0.4s;
+}
+
+#musica:hover{
+	opacity: 1;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+
+/*Regalos*/
+
+
+.medioRegalos{
+	background-color: rgb(43, 112, 40);
+	height: 510px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.elemento{
+	margin-left: 125px;
+}
+
+.fila{
+	display: flex;
+}
+
+.imagenRegalos{
+	border-radius: 50%;
+	/*margin-left: 150px;*/
+	margin-top: 100px;
+	width: 170px;
+	height: 170px;
+	transition-duration: 0.5s;
+}
+
+.imagenRegalos:hover{
+	border-radius: 30%;
+	transition-duration: 0.2s;
+}
+
+
+.tituloRegalos{
+	margin-top: -85px;
+	text-decoration-color: none;
+	text-decoration: none;
+	color: white;
+	/*margin-left: 170px;*/
+	margin-top: 20px;
+}
+
+
+/* general */
+
+
+.footer{
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(212, 36, 38);
+	overflow: auto;
+	height: 60px;
+}
+
+/*canciones*/
+
+.medioCanciones{
+	/*background-image: url('https://bit.ly/38UvxfB');*/
+	overflow: auto;
+
+	padding: 0;
+	background-image: url('https://ak6.picdn.net/shutterstock/videos/2812006/thumb/1.jpg');
+	/*height: 510px;*/
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	justify-content: center; 
+	text-align: center;
+}
+
+.video{
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.selectores{
+	justify-content: center;
+	text-align: center;
+}
+
+.button{
+	/*font-size: 25px;
+	color:white;
+	font-weight: bolder;
+	margin-right: 100px;
+	margin-left: 100px;
+	padding: 20px;*/
+	margin-right: 100px;
+	margin-left: 100px;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 10px;
+	border: 2px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+	border-radius: 10px;
+}
+
+.button:hover{
+	cursor: pointer;
+	color: #ffffff !important;
+	background: rgb(7, 159, 65);
+	border-color: /*rgb(9, 209, 93)*/ rgb(255,0,0) !important;
+	transition: all 0.4s ease 0s;
+}
+
+
+#youtube{
+	border-radius: 20px;
+}
+
+#nombreVideo{
+	color:rgb(212, 36, 38);
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+
+/*Recetas*/
+
+.medioRecetas{
+	justify-content: center;
+	text-align: center;
+}
+
+.lineaRecetas{
+	justify-content: center;
+	text-align: center;
+	display: inline-flex; 
+}
+
+.elementoRecetas{
+	justify-content: center;
+	text-align: center;
+	margin-left: 80px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.imagenReceta{
+	width: 200px;
+	height: 180px;
+}
+
+.linkReceta{
+	text-decoration: none;
+	font-size: 20px;
+	color:rgb(3, 79, 32);
+	transition-duration: 0.4s;
+}
+
+.linkReceta:hover{
+	letter-spacing: 3px;
+	transition-duration: 0.3s;
+}

@@ -1,0 +1,60 @@
+extends layout
+
+block content
+
+	div.medioCanciones
+		div.video
+			iframe#youtube(width='560' height='315' src='https://www.youtube.com/embed/yXQViqx6GMY' frameborder='0' allowfullscreen='' allow='autoplay')
+			div.selectores
+				button#btn-l.button(type='button')  &lt;
+				button#btn-r.button(type='button')  &gt;
+			h1#nombreVideo
+	script.
+		let lista = ['https://www.youtube.com/embed/yXQViqx6GMY','https://www.youtube.com/embed/3pQgSvN7hYo','https://www.youtube.com/embed/Nx-DvH41Tjo'];
+		let selectorVideo = 0;
+		let btnl = document.getElementById('btn-l');
+		let btnr = document.getElementById('btn-r');
+		document.getElementById('nombreVideo').innerHTML = 'Mariah Carey - All I want for Christmas is you';
+		btnl.onclick = function(){
+			if(selectorVideo == -1){
+				selectorVideo = 2;
+			}else{
+				if(selectorVideo == 0){
+					document.getElementById('nombreVideo').innerHTML = 'Mariah Carey - All I want for Christmas is you';
+					document.getElementById('youtube').src=lista[0];
+				}
+				if(selectorVideo == 1){
+					document.getElementById('nombreVideo').innerHTML = 'Mr.Grinch';
+					document.getElementById('youtube').src=lista[1];
+				}
+				if(selectorVideo == 2){
+					document.getElementById('nombreVideo').innerHTML = 'Michael Buble-Jingle bells';
+					document.getElementById('youtube').src=lista[2];
+			}
+			selectorVideo--;
+			}
+	
+
+		}
+		btnr.onclick = function(){
+			if(selectorVideo == 2){
+				selectorVideo = 0;
+			}else{
+				selectorVideo++;
+			}
+			if(selectorVideo == 0){
+				document.getElementById('nombreVideo').innerHTML = 'Mariah Carey - All I want for Christmas is you';
+				document.getElementById('youtube').src=lista[0];
+			}
+			if(selectorVideo == 1){
+				document.getElementById('nombreVideo').innerHTML = 'Mr.Grinch';
+				document.getElementById('youtube').src=lista[1];
+			}
+			if(selectorVideo == 2){
+				document.getElementById('nombreVideo').innerHTML = 'Michael Buble-Jingle bells';
+				document.getElementById('youtube').src=lista[2];
+			}
+		}
+			
+
+		

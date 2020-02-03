@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet")
+  body
+  .container-fluid
+  #header
+    div(class="")
+      img#logo(src='https://img.icons8.com/plasticine/2x/christmas-ball.png' style='width:80px')
+    div(class="nombre")
+      a#nombre(href='/') Navidad
+    div(class="")
+      a.elementoMenu(href='/regalos') Regalos
+    div(class="")
+      a.elementoMenu(href='/canciones') Canciones
+    div(class="")
+      a.elementoMenu(href='/recetas') Recetas
+  block content
+
+  div.footer
+    p Santaclaus inc ™
+    

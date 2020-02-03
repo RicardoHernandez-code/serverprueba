@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	div.medio
+		h1#titulo Felices fiestas
+		h1#subtitulo Y un próspero año nuevo
+		audio#musica(autoplay loop controls allow='autoplay')
+			source(src='/audio/navidad.mp3' type='audio/mpeg' )
+	script.
+		var musica = document.getElementById('musica');
+		musica.volume = '0.5';
+		
+
+		
